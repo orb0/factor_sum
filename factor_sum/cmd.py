@@ -112,20 +112,22 @@ def _parse_args(prog, raw_args):
     parser = argparse.ArgumentParser(
         prog = prog,
         description = 'Sums postive numbers that divisable by at least one \
-            number in a passed set of numbers.'
+                       number in a passed set of numbers.'
     )
     parser.add_argument(
         '-m',
         metavar='MIN',
         dest='minimum',
         type=_parse_int,
-        help='Only numbers greater than or equal to MIN will be included in the sum. Defaults to 0.',
+        help='Only numbers greater than or equal to MIN will be included in \
+              the sum. Defaults to 0.',
         default = 1
     )
     parser.add_argument(
         'maximum',
         metavar='MAX',
-        help='Only numbers less than or equal to MAX will be included in the sum.',
+        help='Only numbers less than or equal to MAX will be included in the \
+              sum.',
         type=_parse_int
     )
     parser.add_argument(
