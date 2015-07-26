@@ -28,3 +28,22 @@ def test_compute_sum():
     s.maximum = 20
     s.add(3,5)
     assert s.compute_sum() == 98
+
+def test_compute_sum_with_min():
+    s = factor_sum.Sum()
+    s.maximum = 20
+    s.minimum = 18
+    s.add(3,5)
+    assert s.compute_sum() == 38
+
+def test_compute_sum_with_redunancy_1():
+    s = factor_sum.Sum()
+    s.maximum = 20
+    s.add(3,5,6)
+
+def test_compute_sum_with_redunancy_2():
+    s = factor_sum.Sum()
+    s.maximum = 20
+    s.add(5,6,3)
+    assert s.compute_sum() == 98
+    assert s.compute_sum() == 98

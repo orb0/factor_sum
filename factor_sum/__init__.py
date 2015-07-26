@@ -24,7 +24,6 @@ import fractions
 __all__ = [
     'Sum',
     'lcm',
-    'arthimetic_sum',
     'multiples_sum',
     'main'
 ]

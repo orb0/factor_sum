@@ -3,9 +3,9 @@ from setuptools import setup, find_packages
 setup(
     name='factor_sum',
     version='0.1',
-    description='Sums positive integers that are both less than a user defined
-                 maximum and divisable by at least one number in a user
-                 defined set of numbers.',
+    description='Sums positive integers that are both less than a user \
+                 defined maximum and divisable by at least one number in a \
+                 user defined set of numbers.',
     author='Aubrey Stark-Toller',
     author_email='aubrey@deepearth.uk',
     license='MIT',
