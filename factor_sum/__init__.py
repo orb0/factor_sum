@@ -170,6 +170,3 @@ def main(argv = None):
 
     sys.stdout.write(str(s.compute_sum()))
     sys.stdout.write("\n")
-
-if __name__ == '__main__':
-    sys.exit(main())

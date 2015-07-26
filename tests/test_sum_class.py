@@ -44,6 +44,7 @@ def test_compute_sum_with_redunancy_1():
 def test_compute_sum_with_redunancy_2():
     s = factor_sum.Sum()
     s.maximum = 20
-    s.add(5,6,3)
+    s.add(6)
+    s.add(5,3)
     assert s.compute_sum() == 98
     assert s.compute_sum() == 98
